@@ -3,7 +3,8 @@
 > **电脑网页端 Chrome / Edge 扩展，不支持抖音手机 App。** 识别、筛选和排序都在当前浏览器本地完成。
 
 - **最新版（推荐）：** 本地发布版 v1.6.0
-- 历史版本：[VlogProducer/douyin-comment-assistant](https://github.com/VlogProducer/douyin-comment-assistant)
+- 历史版本一：[VlogProducer/douyin-comment-assistant](https://github.com/VlogProducer/douyin-comment-assistant)
+- 历史版本二：[VlogProducer/douyin-comment-assistant-v1.5.2](https://github.com/VlogProducer/douyin-comment-assistant-v1.5.2)
 
 ## v1.6.0 更新亮点
 
@@ -15,8 +16,6 @@
 - **切屏恢复：** 切到后台或页面被冻结前，会保存最近整理的评论及自动加载状态；后台自动加载额外以浏览器允许的最小 30 秒周期做一次正常滚动唤醒，返回页面或浏览器恢复该标签页后自动续接。
 - **定位不收起：** 定位原评论或展开回复后，助手面板仍保留在原位，并标记刚定位的卡片。
 - **降低页面负担：** 只监听评论容器的变化；没有新增或属性变化时不重绘整个助手面板。
-
-完整变更请参见 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 基础功能
 

@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "抖音评论助手",
+  "version": "1.6.0",
+  "description": "对抖音网页中已加载的评论按热度或时间排序，并支持关键词、IP 城市和昵称筛选。",
+  "permissions": ["storage", "tabs", "alarms"],
+  "host_permissions": ["https://*.douyin.com/*"],
+  "action": {
+    "default_title": "抖音评论助手",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.douyin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>抖音评论助手</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <div class="brand">
+        <span class="logo">评</span>
+        <div>
+          <h1>抖音评论助手</h1>
+          <p>排序、关键词与 IP 城市筛选</p>
+        </div>
+      </div>
+
+      <label for="videoUrl">抖音视频链接</label>
+      <textarea id="videoUrl" rows="3" placeholder="粘贴 douyin.com 的视频链接"></textarea>
+
+      <fieldset>
+        <legend>默认排序方式</legend>
+        <label class="choice">
+          <input type="radio" name="sortMode" value="hot" checked />
+          <span><b>热度优先</b><small>点赞数从高到低</small></span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="sortMode" value="newest" />
+          <span><b>时间倒序</b><small>最新评论在前</small></span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="sortMode" value="oldest" />
+          <span><b>时间正序</b><small>最早评论在前</small></span>
+        </label>
+      </fieldset>
+
+      <button id="openButton" type="button">打开视频并整理评论</button>
+      <button id="currentButton" class="secondary" type="button">整理当前抖音页面</button>
+      <p id="status" role="status"></p>
+      <p class="hint">助手不会读取账号密码，只处理网页中已经加载的评论。</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
